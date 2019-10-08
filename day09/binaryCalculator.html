@@ -1,0 +1,116 @@
+<!-- Enter your HTML code here -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Binary Calculator</title>
+
+    <style>
+        body {
+            width: 33%;
+        }
+
+        #res {
+            background-color: lightgray;
+            border: solid;
+            height: 48px;
+            font-size: 20px;
+        }
+
+        #btns button {
+            width: 25%;
+            height: 36px;
+            font-size: 18px;
+            margin: 0;
+            float: left;
+        }
+
+        #btn0,
+        #btn1 {
+            background-color: lightgreen;
+            color: brown;
+        }
+
+        #btnClr,
+        #btnEql {
+            background-color: darkgreen;
+            color: white;
+        }
+
+        #btnSum,
+        #btnSub,
+        #btnMul,
+        #btnDiv {
+            background-color: black;
+            color: red;
+        }
+    </style>
+
+    <script>
+        function input(val) {
+            document.getElementById("res").innerHTML += val
+        }
+
+        function inputOperation(op) {
+            document.getElementById("res").innerHTML += op
+        }
+
+        function inputClear() {
+            document.getElementById("res").innerHTML = ''
+        }
+
+        function getResult() {
+            let re = /[\+\-\*\/]+/g
+            let res = document.getElementById("res").innerHTML
+
+            let operation = res.match(re)
+
+            if (operation == "+") {
+                let numbers = res.split("+")
+                res = parseInt(numbers[0], 2) + parseInt(numbers[1], 2)
+                document.getElementById("res").innerHTML = res.toString(2)
+            }
+
+            if (operation == "-") {
+                let numbers = res.split("-")
+                res = parseInt(numbers[0], 2) - parseInt(numbers[1], 2)
+                document.getElementById("res").innerHTML = res.toString(2)
+            }
+
+            if (operation == "*") {
+                let numbers = res.split("*")
+                res = parseInt(numbers[0], 2) * parseInt(numbers[1], 2)
+                document.getElementById("res").innerHTML = res.toString(2)
+            }
+
+            if (operation == "/") {
+                let numbers = res.split("/")
+                res = parseInt(numbers[0], 2) / parseInt(numbers[1], 2)
+                res = Math.floor(res)
+                document.getElementById("res").innerHTML = res.toString(2)
+            }
+
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="res"></div>
+        <div id="btns">
+            <button id="btn0" value="0" onclick="input(0)">0</button>
+            <button id="btn1" value="1" onclick="input(1)">1</button>
+            <button id="btnClr" value="C" onclick="inputClear()">C</button>
+            <button id="btnEql" value="=" onclick="getResult()">=</button>
+            <button id="btnSum" value="+" onclick="inputOperation('+')">+</button>
+            <button id="btnSub" value="-" onclick="inputOperation('-')">-</button>
+            <button id="btnMul" value="*" onclick="inputOperation('*')">*</button>
+            <button id="btnDiv" value="/" onclick="inputOperation('/')">/</button>
+        </div>
+    </div>
+</body>
+
+</html>

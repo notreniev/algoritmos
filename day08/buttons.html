@@ -1,0 +1,54 @@
+<!-- Enter your HTML code here -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Buttons Grid</title>
+
+    <style>
+        .buttonContainer {
+            width: 75%;
+        }
+
+        .buttonContainer>.buttonClass {
+            width: 30%;
+            height: 48px;
+            font-size: 24px;
+        }
+    </style>
+
+    <script>
+        let i = 1
+        function myclick() {
+            document.getElementById('btn1').innerHTML = i
+            document.getElementById('btn2').innerHTML = i+1
+            document.getElementById('btn3').innerHTML = i+2
+            document.getElementById('btn4').innerHTML = i+3
+            document.getElementById('btn6').innerHTML = i+4
+            document.getElementById('btn7').innerHTML = i+5
+            document.getElementById('btn8').innerHTML = i+5
+            document.getElementById('btn9').innerHTML = i+7
+            console.log('btn' + i++)
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id="btns" class="buttonContainer">
+        <button id="btn1" class="buttonClass" value="1">1</button>
+        <button id="btn2" class="buttonClass" value="2">2</button>
+        <button id="btn3" class="buttonClass" value="3">3</button>
+        <button id="btn4" class="buttonClass" value="4">4</button>
+        <button id="btn5" class="buttonClass" onclick="myclick()">5</button>
+        <button id="btn6" class="buttonClass" value="6">6</button>
+        <button id="btn7" class="buttonClass" value="7">7</button>
+        <button id="btn8" class="buttonClass" value="8">8</button>
+        <button id="btn9" class="buttonClass" value="9">9</button>
+    </div>
+</body>
+
+</html>
