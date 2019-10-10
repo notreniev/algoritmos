@@ -10,7 +10,6 @@ function vowelsAndConsonants(s) {
     for (let i = 0 ; i<= result.length -1; i++){
         console.log(result[i])
     }
-
 }
 
 vowelsAndConsonants(s)
