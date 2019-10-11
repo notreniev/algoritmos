@@ -15,19 +15,9 @@ function getSecondLargest(nums) {
             first = nums[i]
         }
 
-        if (nums[i] > second) {
-            thirty = second;
-            second = nums[i]
-        }
-
         if (nums[i] > second && nums[i] < first) {
             second = nums[i]
         }
-
-        if (nums[i] > thirty && nums[i] < thirty) {
-            thirty = nums[i]
-        }
-
     }
 
     return second
