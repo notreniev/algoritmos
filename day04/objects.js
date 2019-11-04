@@ -1,12 +1,16 @@
-/*
- * Complete the Rectangle function
- */
-function Rectangle(a, b) {
-    this.length = a
-    this.height = b
-    this.perimeter = 2 * (a + b)
-    this.area = a * b
+function getLuckyFloorNumber(n){
+    let re = /^4|13+/g
+    if (!re.test(n)){
+        console.log("only good numbers: ", n)
+    }else{
+        console.log("bad numbers: ", n+1)
+    }
 }
 
-const rec = new Rectangle(4, 5)
-console.log(rec)
+function main(n){
+    for(let i = 1; i< n; i++){
+        getLuckyFloorNumber(i)
+    }
+}
+
+main(140)

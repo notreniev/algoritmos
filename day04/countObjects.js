@@ -32,4 +32,5 @@ let object4 = {
 };
 
 const objects = [object0, object1, object2, object3, object4];
-getCount(objects);
+console.log(getCount(objects))
+
