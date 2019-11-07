@@ -24,4 +24,8 @@ function getSecondLargest(nums) {
 }
 
 let nums = [2, 3, 6, 6, 5]
-console.log(getSecondLargest(nums))
+    //console.log(getSecondLargest(nums))
+
+//const [a] = Array.from(new Set([6, 4, 7, 9, 6, 3, 4, 10, 9, 5])).sort((a, b) => a - b).reverse()
+const [, a] = Array.from(new Set([6, 4, 7, 9, 6, 3, 4, 10, 9, 5])).sort((a, b) => a - b).reverse()
+console.log(a)
