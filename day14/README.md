@@ -12,4 +12,4 @@ Calcular e escrever o total (total = quantidade adquirida * preço unitário), o
 - Se quantidade > 10 o desconto será de 5%
 ```
 
-# Basta executar o arquivo HTML para ver o script rodando
+Basta executar o arquivo HTML para ver o script rodando
