@@ -10,10 +10,11 @@
  * 
  */
 
-function load() {
-    var teste = document.getElementsByTagName('table')
+
+ function load() {
+    var table = document.getElementsByTagName('table')
     const result = document.getElementById('result')
-    const html = Array.from(teste)
+    const html = Array.from(table)
 
     const arr = []
 
