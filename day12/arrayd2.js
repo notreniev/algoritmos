@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 // let arr = [
 //     1, 2, 3, 4, 5, 6,
 //     7, 8, 9, 10, 11, 12,
@@ -28,6 +30,7 @@ for (let i = 0; i <= arr.length - 1; i++) {
 }
 */
 
+>>>>>>> 3618d15e053fe362da8e9c62b1da1824e0efd6ef
 let arr = [
     1, 1, 1, 0, 0, 0,
     0, 1, 0, 0, 0, 0,
@@ -37,6 +40,23 @@ let arr = [
     0, 0, 1, 2, 4, 0
 ]
 
+<<<<<<< HEAD
+const saida = []
+let count = 0
+for (let i = 0; i <= 3; i++) {
+    saida.push(arr.slice(i, i + 3))
+}
+
+for (let i = 3; i <= 6; i += 3) {
+    saida.push(arr.slice(i, i + 3))
+}
+
+console.log(saida)
+
+//for (let j = 0; j <= saida.length - 1; j++) {
+// console.log(saida[0], saida[1], saida[2], saida[3])
+//}
+=======
 // let arr = [
 //     1, 2, 3, 4, 5, 6,
 //     7, 8, 9, 10, 11, 12,
@@ -58,3 +78,4 @@ for (let i = 0; i <= arr.length - 1; i++) {
     //break
 }
 
+>>>>>>> 3618d15e053fe362da8e9c62b1da1824e0efd6ef
